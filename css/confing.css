@@ -1,0 +1,222 @@
+@import url(./variavel.css);
+
+*{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main{
+  background-color: bisque;
+  width: 100%;
+  height: 604px;
+}
+
+#topo{
+  background-color: yellowgreen;
+  height: 60px;
+}
+
+#topo_logo{
+  float: left;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+
+#topo_links{
+  width: 20%;
+  margin-left: 80%;
+  justify-content: space-around;
+}
+
+.links2{
+  font-size: 40px;
+}
+
+div > img{
+  width: 50px;
+  height: 50px;
+  margin-left: 30%;
+}
+
+#rodape{
+  text-align: center;
+  height: 40px;
+  margin-top: 15%;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
+
+.button{
+  cursor: pointer;
+  text-align: center;
+  margin-left: 20%;
+  padding: 0 50px 0 50px;
+  border: none;
+  transition-duration: 0.4s;
+}
+
+.btn-1{
+  background: whitesmoke;
+  color: black;
+  
+}
+
+.btn-1:hover{
+  background: #333333;
+  color: whitesmoke;
+}
+
+.btn-2{
+  background: whitesmoke;
+  color: black;
+  
+}
+
+.btn-2:hover{
+  background: #333333;
+  color: whitesmoke;
+}
+
+.btn-3{
+  background: whitesmoke;
+  color: black;
+  
+}
+
+.btn-3:hover{
+  background: #333333;
+  color: whitesmoke;
+}
+
+.btn-4{
+  background: whitesmoke;
+  color: black;
+  
+}
+
+.btn-4:hover{
+  background: #333333;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+  .responsive-image {
+      display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  #main{
+    width: 100%;
+    height: 750px;
+  }
+
+  #topo_logo{
+    float: left;
+    width: 45%;
+    margin-top: 10px;
+    margin-left: 1px;
+  }
+
+  #topo_links{
+    display: none;
+  }
+
+  #topo{
+    background-color: yellowgreen;
+    height: 50px;
+  }
+
+  #sistemas{
+    height: 400px;
+    width: 100%;
+    margin-left: -50px;
+    margin-top: 20%;
+  }
+
+  .menu_imagem{
+      display: block;
+  } 
+
+  #rodape{
+    display: none;
+  }
+
+  .responsive-image{
+    width: 20%;
+    margin-left: 54%;
+    margin-top: 55%;
+    background-color: aquamarine;
+    border-radius: 40px;
+  }
+
+  .button{
+    cursor: pointer;
+    text-align: center;
+    margin-left: 30%;
+    padding: 10px 50px 10px 30px;
+    margin-bottom: 20px;
+    border: none;
+    transition-duration: 0.4s;
+    background: none;
+  }
+
+  .btn-1{
+    background: whitesmoke;
+    color: black;
+    
+  }
+  
+  .btn-1:hover{
+    background: #333333;
+    color: whitesmoke;
+  }
+
+  .btn-2{
+    background: whitesmoke;
+    color: black;
+    
+  }
+  
+  .btn-2:hover{
+    background: #333333;
+    color: whitesmoke;
+  }
+
+  .btn-3{
+    background: whitesmoke;
+    color: black;
+    
+  }
+  
+  .btn-3:hover{
+    background: #333333;
+    color: whitesmoke;
+  }
+
+  .btn-4{
+    background: whitesmoke;
+    color: black;
+    
+  }
+  
+  .btn-4:hover{
+    background: #333333;
+    color: whitesmoke;
+  }
+}

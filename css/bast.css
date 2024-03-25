@@ -1,0 +1,59 @@
+        .card-details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .card-details input {
+          margin-bottom: 10px;
+        }
+
+        .card-details-row {
+          display: flex;
+        }
+
+        .card-details-row input {
+          margin-right: 10px;
+        }
+
+        .product-image {
+          max-width: 200px;
+          margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 420px){
+            body{
+                background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/11946668-bokeh-de-luz-azul-fundo-desfocado-gratis-vetor.jpg');
+            }
+
+          h1{
+            width: 100%;    
+            text-align: center;
+            color: white;
+        }
+
+        label{
+            font-size: 175%;
+            padding-left: 28%;
+            color: white;
+        }
+        
+        button{
+            width: 140px;
+            margin-left: 26%;
+            margin-bottom: 12px;
+            margin-top: 8px;
+            font-size: 100%;
+        }
+
+        input{
+            margin-left: 26%;
+            text-align: left;
+            justify-content: left;
+        }
+
+        img{
+            margin-left: 60px;
+        }
+        
+    }

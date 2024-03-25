@@ -1,0 +1,16 @@
+.button{
+    cursor: pointer;
+    padding: 20px 50px;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.btn-1{
+    background: whitesmoke;
+    color: black;
+}
+
+.btn-1:hover{
+    background: #333333;
+    color: whitesmoke;
+}

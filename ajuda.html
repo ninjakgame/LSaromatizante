@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ajuda.css">
+    <link rel="shortcut icon" href="siteok-1.ico">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+</head>
+<header>
+</header>
+<body>
+
+    <img id="header-image" src="Active Support.gif" alt="Header Image">
+
+
+  <div id="support-form-container">
+    <div id="support-form">
+      <form id="support-form" action="#">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="button" onclick="enviarMensagem()">Enviar</button>
+        <button type="button" class="cancel" onclick="cancelar()">Cancelar</button>
+      </form>
+    </div>
+
+  <script>
+  function enviarMensagem() {
+      // Obter os valores dos campos
+      var email = document.getElementById("email").value;
+      var senha = document.getElementById("senha").value;
+      var mensagem = document.getElementById("mensagem").value;
+
+      // Verificar se todos os campos estão preenchidos
+      if (email === "" || senha === "" || mensagem === "") {
+        alert("Todos os campos são obrigatórios. Por favor, preencha todos os campos.");
+      } else {
+        // Exibir mensagem de confirmação
+        alert("Mensagem enviada para " + email);
+
+        // Redirecionar para a tela anterior
+        window.history.back();
+      }
+    }
+
+    function cancelar() {
+      // Redirecionar para a tela anterior
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

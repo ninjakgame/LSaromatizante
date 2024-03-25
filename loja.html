@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>aromatizante girlane</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="css/man.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
+</head>
+<header class="tabela">
+  <button id="sidebarButton"><i class='bx bx-menu'></i></button>
+
+  <div id="sidebar">
+    <div id="closeButton">X</div>
+    <ul id="menu">
+      <li><a href="index.html"><i class="fas fa-home"></i> Menu Principal</a></li>
+      <li><a href="loja.html"><i class='bx bxs-cart-alt'></i> Loja</a></li>
+      <li><a href="ajuda.html"><i class="fas fa-life-ring"></i> Suporte</a></li>
+      <li><a href="conf.html"><i class="fas fa-cog"></i> Configurações</a></li>
+    </ul>
+    <div id="socialIcons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </div>
+</header>
+<body>
+  <h1>Carrinho de Compras</h1>
+
+  <div class="product">
+    <img src="img/casa.jpg" alt="Produto 1">
+    <div class="conteiner">
+      <h3>Aromatizante de Casa</h3>
+      <p>Tipo:</p>
+      <select id="tipo-produto1">
+        <option value="Tuti Fruti">Tuti Fruti</option>
+        <option value="Lavada">Lavanda</option>
+        <option value="Lavada">Cereja Avelã</option>
+        <option value="Lavada">Marinho Ouro</option>
+        <option value="Lavada">Limão Siciliano</option>
+        <option value="Lavada">Capim Limão</option>
+        <option value="Melancia">Melancia</option>
+        <option value="Pitanga">Canela</option> 
+        <option value="Pitanga">Pitanga</option>       
+        <option value="BlackPepper">BlackPepper</option>
+      </select>
+    </div>
+    <div>
+      <p>Preço: R$ <span id="preco-produto1">30.00</span></p>
+      <p>Quantidade:</p>
+      <input type="number" id="quantidade-produto1" value="1">
+      <button onclick="adicionarAoCarrinho1()" class="botao"><i class='bx bx-cart-alt'></i> Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="img/cheiro.png" alt="Produto 2">
+    <div>
+      <h3>Aromatizante de Carro</h3>
+      <p>Tipo:</p>
+      <select id="tipo-produto2">
+        <option value="Tuti Fruti">Tuti Fruti</option>
+        <option value="Lavada">Lavanda</option>
+        <option value="Lavada">Marinho Ouro</option>
+        <option value="Lavada">Limão Siciliano</option>
+        <option value="Lavada">Capim Limão</option>
+        <option value="Melancia">Melancia</option>
+        <option value="Lavada">Cereja Avelã</option>
+        <option value="Pitanga">Canela</option> 
+        <option value="Pitanga">Pitanga</option>        
+        <option value="BlackPepper">BlackPepper</option>
+      </select>
+    </div>
+    <div>
+      <p>Preço: R$ <span id="preco-produto2">20.00</span></p>
+      <p>Quantidade:</p>
+      <input type="number" id="quantidade-produto2" value="1">
+      <button onclick="adicionarAoCarrinho2()" class="botao"><i class='bx bx-cart-alt'></i> Adicionar ao Carrinho</button>
+    </div>
+  </div>
+
+  <h2>Meu Carrinho</h2>
+  <div id="cart"></div>
+
+  <button onclick="verCarrinho()"><i class='bx bx-cart-alt'></i></button>
+
+  <script src="log.js"></script>
+</body>
+</html>

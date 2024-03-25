@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>aromatizante girlane</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirmar Compra</title>
+    <link rel="stylesheet" href="css/bast.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  </head>
+  <body>
+    <h1>Confirme sua compra</h1>
+
+    <form id="formCompra">
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" required><br><br>
+
+      <label for="pix">PIX:</label>
+      <div id="qrcode"></div><br>
+      <button type="button" onclick="gerarImagemExemplo()">Gerar QR Code PIX</button><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="">Telefone: </label><br>
+      <input type="text" id="ncel" maxlength="14" onkeyup="n_cel();"><br><br>
+
+      <div class="card-details">
+        <label for="numeroCartao">Número do Cartão:</label>
+        <input type="text" id="ncatao" name="numeroCartao" onkeyup="numcatao();" maxlength="19" required>
+        
+          <label for="vencimento">Validade:</label><br>
+          <input type="text" id="nvenc" maxlength="5" name="vencimento" onkeyup="n_vencimento();" required>
+        
+          <label for="cvc">CVC:</label><br>
+          <input type="text" id="cvc" name="cvc" maxlength="3" required>
+      </div>
+          
+      <button type="submit" onclick="confirmarCompra(event);">Confirmar Compra</button>
+      <button type="button" onclick="voltarPagina();">Voltar</button>
+    </form>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

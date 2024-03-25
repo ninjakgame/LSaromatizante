@@ -1,0 +1,38 @@
+<h2 style="text-align:center">Lightbox</h2>
+
+
+<input type="radio" name="toggle" id="toggle-slide1" class="navigation" checked>
+<input type="radio" name="toggle" id="toggle-slide2" class="navigation">
+<input type="radio" name="toggle" id="toggle-slide3" class="navigation">
+<input type="radio" name="toggle" id="toggle-slide4" class="navigation">
+
+<div id="slide-container">
+    <div class="slide" id="slide1">
+        <label for="toggle-slide1">
+            <img src="img/4.jpg" alt="Imagem 1">
+        </label>
+    </div>
+    <div class="slide" id="slide2">
+        <label for="toggle-slide2">
+            <img src="img/3.jpg" alt="Imagem 2">
+        </label>
+    </div>
+    <div class="slide" id="slide3">
+        <label for="toggle-slide3">
+            <img src="img/6.jpg" alt="Imagem 3">
+        </label>
+    </div>
+    <div class="slide" id="slide4">
+        <label for="toggle-slide4">
+            <img src="img/5.jpg" alt="Imagem 4">
+        </label>
+    </div>
+</div>
+
+<div class="navigation">
+    <label for="toggle-slide1"></label>
+    <label for="toggle-slide2"></label>
+    <label for="toggle-slide3"></label>
+    <label for="toggle-slide4"></label>
+</div>
+</div>

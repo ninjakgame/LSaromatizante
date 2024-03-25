@@ -1,0 +1,551 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+.lt-5{
+  font-size: 60px;
+  margin-left: -20%;
+}
+
+.lt-3{
+  margin-left: -10%;
+}
+
+#imagem_1{
+  width: 500px;
+  height: 300px;
+}
+
+.cardbox {
+  width: 300px;
+  height: 200px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#sidebarButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: sandybrown;
+  color: #fff;
+  transition: left 0.3s ease;
+}
+
+
+#sidebar.open {
+  left: 0;
+}
+
+#closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#menu {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+
+#menu li {
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#menu li:hover {
+  background-color: #8000ff;
+}
+
+#menu li a:visited{
+  color: white;
+}
+
+#menu li a:active{
+  color: red;
+}
+
+#socialIcons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#socialIcons {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
+  
+  header {
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 6;
+    text-align: center;
+  }
+  
+#iten{
+    padding: 20px;
+    text-align: center;    
+}
+
+#baixo{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.wats{
+    position: fixed; bottom: 75px; right: 75px; z-index: 9999;
+}
+
+#baner{
+    width: 100%;
+    height: 300px;
+}
+
+#banerprim{
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+#banerprib{
+  height: 250px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.arms{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(128, 112, 112);
+}
+
+.gam{
+    text-align: center;
+    padding: 30px;
+    color: aquamarine;
+}
+
+.men{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+table, tr, th{
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+}
+
+table, tr, td{
+    width: 400px;
+}
+
+table, tr, th{
+    border: 1px solid;
+}
+
+table{
+    border-collapse:collapse;
+    width: 50%;
+}
+
+#cardvideo{
+  display: flex;
+  background-color: #ddd;
+  margin-left: 100px;
+  margin-right: 100px; 
+  height: 430px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+
+#imagembanner2{
+  width: 800px;
+  margin-top: 4%;
+  height: 380px;
+  border-radius: 10%;
+  margin-left: -180px;
+}
+
+#videos{
+    width: 800px;
+    height: 400px;
+    padding: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#pror{
+    background-color: peachpuff;
+    margin-left: 290px;
+    margin-right: 14.5%;
+}
+
+#bot {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .center-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .footer-section{
+    align-content: space-between;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-family: Arial, sans-serif;
+  }  
+
+  #topButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 35%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #slide-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navigation label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#toggle-slide1:checked ~ #slide-container #slide1,
+#toggle-slide2:checked ~ #slide-container #slide2,
+#toggle-slide3:checked ~ #slide-container #slide3,
+#toggle-slide4:checked ~ #slide-container #slide4 {
+    display: block;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+}
+
+#toggle-slide1:checked ~ .navigation label[for="toggle-slide1"],
+#toggle-slide2:checked ~ .navigation label[for="toggle-slide2"],
+#toggle-slide3:checked ~ .navigation label[for="toggle-slide3"],
+#toggle-slide4:checked ~ .navigation label[for="toggle-slide4"] {
+    background-color: #555;
+}
+
+#myImg{
+  width: 20%;
+  height: 20%;
+  margin-left: 30%;
+}
+
+
+  @media (max-width: 450px) {
+   #myImg{
+    width: 100%;
+    margin-left: 1px;
+   }
+
+    #baner{
+      width: 100%;
+      margin: 0 0 0 0;
+      height: 100px;
+    }
+    .arms{
+      width: 100%;
+      height: 800px;
+    }
+    #aromg{
+      margin: -160% 0 0 30%;
+    }
+    
+    #banerprim{
+      margin: 20% 0 0 30%;
+    }
+
+    #banerprib{
+      margin: 20% 0 0 -200%;
+    }
+
+    #aron{
+      margin: 400px 0 0 -360px;
+    }
+    img{
+      margin: 5% 0 0 30%;
+    }
+    .wats{
+      margin-right: 70%;
+    }
+    footer{
+      width: 88%;
+      height: 40%;
+    }
+    .container{
+      width: 80%;
+      height: 40%;
+    }
+    section > #videos{
+      width: 94.5%;
+      margin-left: 0;
+    }
+
+    section > #pror{
+      margin-left: 0;
+    }
+
+    #cardvideo{
+      margin-left: 2px;
+    }
+
+    #videos{
+      margin-left: 20px;
+    }
+  }
